@@ -1,0 +1,26 @@
+body
+{
+   background-image: url(RE.jpg); 
+   
+}
+
+.ss
+{
+ text-align: center;
+}
+
+.form
+{
+    font-size: x-large;
+}
+
+.btn
+{
+ text-align: center;
+ background-color: aqua;
+ cursor: pointer;
+ padding: 5px 100px;
+ margin: 8px 10px;
+ border:none;
+ width: 50%;
+}
