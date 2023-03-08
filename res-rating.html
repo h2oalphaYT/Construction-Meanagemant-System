@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Construction System</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/res-rating.css">
+
     
    
 
@@ -26,10 +28,10 @@
         <ul>
                 
             <li><a  href="home.html" ><font class="text" >Home</font></a></li>
-            <li><a  href="project.html" ><font class="text" >Contact</font></a></li>
-            <li><a  href="project.html"> <font class="text" >User Profile</font></a></li>
-            <li><a  href="project.html"> <font class="text" >Our Product</font></a></li>
-            <li><a  href="project.html"><font class="text" >Blogs</font></a></li>
+            <li><a  href="CONTACT.HTML" ><font class="text" >Contact</font></a></li>
+            <li><a  href="UpdatePro.php"> <font class="text" >User Profile</font></a></li>
+            <li><a  href="Our Product.html"> <font class="text" >Our Product</font></a></li>
+            <li><a  href=""><font class="text" >Blogs</font></a></li>
             <li><a  href="review.php"><font class="text" >Reviews</font></a></li>
       
             <!--search bar-->
@@ -62,35 +64,44 @@
 
         </div>
 
-        <!--add slide show images-->
-
-        <div class="slide-show">
-
-            <div class="myslide">
-                <img src="images/home-slide-2.jpg" width="1910vh" height="670vh" >
-            
-            <div class="text-home">
-           
-                <h1>WE PROVIDE <br>BEST SERVICE.</h1>
-
-                <p>we belive in designing exceptional places where people and businesses will thrive.Your business investments have to be effective and bring real value. The question that arises is whether a website can be beneficial for a construction company. To answer, let’s sort some things out.</p>
-            
-                <a class="btn" href="project.html" >Get Started.</a>
+        <div class="container">
+            <div style="text-align:center">
+              <h1>Review Us</h1>
+              <p>Review Us and Build Your Dream With US. use our contact form for all information requests or contact us directly using the contact information below</p>
             </div>
+
+            <div class="row">
+              <div class="column">
+             <video class="vedio" src="images/about-vid.mp4" loop="" muted="" autoplay="" width="100%" ></video>
+              </div>
+
+              <div class="column">
+                <form method="post" action="Rating.php">
+                  <label for="fname"> Name</label>
+                  <input type="text" id="fname" name="firstName" placeholder="Your name..">
+                  <label for="lname">Email</label>
+                  <input type="text" id="lname" name="email" placeholder="Your Email..">
+                  <label for="country">opinion</label>
+
+                  <select id="opinion" name="opinion">
+                    <option value="Strongly bad">Strongly Bad</option>
+                    <option value="Bad">Bad</option>
+                    <option value="Bad">Good</option>
+                    <option value="Strongly Good">Strongly Good</option>
+                    
+                  </select>
+
+                  <label for="comment">comment</label>
+                  <textarea id="subject" name="comment" placeholder="Write something.." style="height:170px"></textarea>
+
+                  <input type="submit" class="btn" value="Submit">
+
+                </form>
+              </div>
             </div>
-            
-            
-                
-            </div>
-            </div>
-        </div>
+          </div>
+        
 
-
-        <!--about us part-->         
-
-        </div>
-
-        <!--footer part-->
         <footer>
             <center>
                 <h3 class="text">Follow Us</h3>
@@ -105,17 +116,17 @@
 
                     <p >contact us : 0719352275 / 0719352275</p>
 
-                    <div class="links">
-                        <a class="btn" href="home.html" >Home</a>
-                        <a class="btn" href="project.html" >About Us</a>
-                        <a class="btn" href="Servises.html" >Services</a>
-                        <a class="btn" href="#Revievs" >FAQ</a>
-                        <a class="btn" href="ourProjects.html" >Our Project</a>
-                    </div>
-    
+
                 </div>
 
-               
+                <div class="links">
+                    <a class="btn" href="home.html" >Home</a>
+                    <a class="btn" href="blogs.html" >About Us</a>
+                    <a class="btn" href="Servises.html" >Services</a>
+                    <a class="btn" href="#Revievs" >FAQ</a>
+                    <a class="btn" href="ourProjects.html" >Our Project</a>
+                </div>
+
                 <div class="text" >@Created BY <span class="logo2">CSK Team</span> | All right reserved!</div>
 
 

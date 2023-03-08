@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Construction System</title>
     <link rel="stylesheet" href="css/registation.css"> <!--home css-->
-    <link rel="stylesheet" href="project.css">  <!--project css-->
-    <script src="js/home.js"></script>
+    <script src="js/registation.js"></script>
+      <!--project css-->
+    
     
 
 </head>
@@ -20,18 +20,18 @@
         
          <!--logo adding-->
          <div class="logo">
-         <a href="" >CSK <span class="logo2">construction</span></a>
+         <a href="home.html" >CSK <span class="logo2">construction</span></a>
         </div>
         <div class="navA"> 
         <!--navigation baR-->
         <ul>
                 
-            <li><a  href="/home.html" ><font class="text" >Home</font></a></li>
-            <li><a  href="" ><font class="text" >Contact</font></a></li>
-            <li><a  href=""> <font class="text" >Services</font></a></li>
-            <li><a  href=""> <font class="text" >Our Product</font></a></li>
+            <li><a  href="home.html" ><font class="text" >Home</font></a></li>
+            <li><a  href="CONTACT.HTML" ><font class="text" >Contact</font></a></li>
+            <li><a  href="Servises.html"> <font class="text" >Services</font></a></li>
+            <li><a  href="Our Product.html"> <font class="text" >Our Product</font></a></li>
             <li><a  href=""><font class="text" >Blogs</font></a></li>
-            <li><a  href=""><font class="text" >Reviws</font></a></li>
+            <li><a  href="review.php"><font class="text" >Reviws</font></a></li>
       
             <!--search bar-->
             
@@ -46,11 +46,11 @@
        
 
         <div class="login" >
-            <a href="sathira_iwt/project.html"><img class="contact " src="../images/login.jpg" alt="login" width="33px"></a>
+            <a href="project.html"><img class="contact " src="images/login.jpg" alt="login" width="33px"></a>
         </div>
 
         <div class="signup" >
-            <a href=""><img class="contact" src="../images/signup.jpeg" alt="signup" width="48px"></a>
+            <a href="registation.html"><img class="contact" src="images/signup.jpeg" alt="signup" width="48px"></a>
         </div>
 
     </div>
@@ -65,34 +65,34 @@
 	<!-- user enters there user id and password-->
 	
     <div class="bg-img">
-        <form action="" class="container">
+        <form action="register.php" id="container" method="POST">
           <h1><center>Register</center></h1>
 
-          <div class="first-last">
+          <div class="first_last">
 
-          <label for="email"><b>First Name</b></label>
-          <input type="text" placeholder="Enter first name" name="Enter first name" required>
-          <label for="email"><b>Last Name</b></label>                                   <!--first last nAME-->
-          <input type="text" placeholder="Enter Last name" name="Enter Last name" required>
+          <label for="fname"><b>First Name</b></label>
+          <input type="text" placeholder="Enter first name" name="fName" required>
+          <label for="lname"><b>Last Name</b></label>                                   <!--first last nAME-->
+          <input type="text" placeholder="Enter Last name" name="lName" required>
 
         </div>
          
-        <label for="email"><b>Phone Number</b></label>                                   
-          <input type="text" placeholder="Enter Phone number" name="Enter ph number" required>
+        <label for="phoneNo"><b>Phone Number</b></label>                                   
+          <input type="text" placeholder="Enter Phone number" name="phoneNo" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
       
           <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
+          <input type="text"  placeholder="Enter Email" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
           <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <input type="password" id="psw" placeholder="Enter Password" name="psw"  pattern=".{8,}" title="Eight or more characters" required>
           <label for="psw"><b>Confirm Password</b></label>
-          <input type="password" placeholder="Re-Enter Password" name="psw" required>
+          <input type="password" id="Cpsw" placeholder="Re-Enter Password" name="Cpsw" pattern=".{8,}" title="Eight or more characters" required>
 
           
 
           <center>
             
-          <a href="/sathira_iwt/project.html">already have an account?signin..</a> <br>
-          <button type="submit" id="btn">Submit</button> </div> </center>
+          <a href="project.html">already have an account?signin..</a> <br>
+          <button type="submit" id="btn" onclick="matchPassword()">Submit</button> </div> </center>
 
         </form>
     </div>
@@ -100,12 +100,7 @@
        
       
 
-        
-
-
-
-    </nav>
-
+    
     
 </body>
 </html>
